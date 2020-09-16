@@ -1,7 +1,7 @@
 # Welcome to the HackMIT 2020 Beginner Workshop!
 
 ## Important Notes
-* If you plan on attending the workshop, please make sure to complete (Pre-Workshop Setup)[#pre-workshop-setup] before the event!
+* If you plan on attending the workshop, please make sure to complete [**Pre-Workshop Setup**](#pre-workshop-setup) before the event!
 * If you want to submit to the **Beginner** track at HackMIT, you must have attended at least one of the beginner workshops!
 
 ## Overview
@@ -31,7 +31,7 @@ The breakdown of topics for each workshop are:
 * This repository will be used as your starting off point. You will build your app off of here
 * We will also provide a repository of the final code from each of the workshops for your future reference
 
-#Pre Workshop Setup
+# Pre-Workshop Setup
 #### Setup Github
 Make sure you have github installed on your computer.
 
