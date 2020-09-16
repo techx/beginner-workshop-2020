@@ -1,6 +1,6 @@
-<img src="https://i.ibb.co/dgdbd2K/with-rails.png" alt="with-rails" width="100%" border="0" />
-
 # Welcome to the HackMIT 2020 Beginner Workshop!
+
+<img src="https://i.ibb.co/dgdbd2K/with-rails.png" alt="with-rails" width="100%" border="0" />
 
 ## Important Notes
 * If you plan on attending the workshop, please make sure to complete [**Pre-Workshop Setup**](#pre-workshop-setup) before the event!
