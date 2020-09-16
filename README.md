@@ -11,7 +11,7 @@ The HackMIT 2020 Beginner Workshop will be a crash course into the basics of cre
 
 **Topics**
 
-The breakdown of topics for each workshop are:
+The breakdown of topics for each workshop:
 1. Friday, 12:00 AM: Workshop 1
     * Intro to using Git
     * Creating a frontend with HTML/CSS
