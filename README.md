@@ -1,3 +1,4 @@
+![img](https://files.slack.com/files-pri/T025632UR-F01540NCA31/with_rails.png)
 # Welcome to the HackMIT 2020 Beginner Workshop!
 
 ## Important Notes
