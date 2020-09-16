@@ -31,7 +31,7 @@ The breakdown of topics for each workshop are:
 * This repository will be used as your starting off point. You will build your app off of here
 * We will also provide a repository of the final code from each of the workshops for your future reference
 
-#Pre-Workshop Setup
+#Pre Workshop Setup
 #### Setup Github
 Make sure you have github installed on your computer.
 
