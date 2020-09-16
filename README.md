@@ -1,7 +1,7 @@
 # Welcome to the HackMIT 2020 Beginner Workshop!
 
 ## Important Notes
-* If you plan on attending the workshop, please make sure to complete (**Pre-Workshop Setup**)[#pre-workshop-setup] before the event!
+* If you plan on attending the workshop, please make sure to complete (Pre-Workshop Setup)[#pre-workshop-setup] before the event!
 * If you want to submit to the **Beginner** track at HackMIT, you must have attended at least one of the beginner workshops!
 
 ## Overview
