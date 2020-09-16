@@ -1,4 +1,4 @@
-![img](https://i.ibb.co/dgdbd2K/with-rails.png)
+<img src="https://i.ibb.co/dgdbd2K/with-rails.png" alt="with-rails" border="0" />
 
 # Welcome to the HackMIT 2020 Beginner Workshop!
 
