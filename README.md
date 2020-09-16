@@ -26,7 +26,7 @@ The breakdown of topics for each workshop are:
 * Finish all the steps of **Pre-Workshop Setup** (below) before the event
 
 
-## Workshop Structure and Resources
+**Workshop Structure and Resources**
 * The slides for the workshop can be found at [go.hackmit.org/beginner-slides](https://go.hackmit.org/beginner-slides)
 * This repository will be used as your starting off point. You will build your app off of here
 * We will also provide a repository of the final code from each of the workshops for your future reference
