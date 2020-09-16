@@ -23,7 +23,7 @@ The breakdown of topics for each workshop:
     * Intro to APIs
 
 **Prerequisites**: 
-* You should have fundamental coding knowledge, on the level of AP Computer Science or a college introduction CS course.
+* You should have some fundamental coding knowledge, on the level of AP Computer Science or a college introduction CS course is more than enough.
 * You should have some familiarity with Python. Python fundamentals will not be taught
 * Finish all the steps of **Pre-Workshop Setup** (below) before the event
 
