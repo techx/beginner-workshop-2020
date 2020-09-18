@@ -15,10 +15,10 @@ The breakdown of topics for each workshop:
 1. Friday, 12:00 AM: Workshop 1
     * Intro to using Git
     * Creating a frontend with HTML/CSS
-2. Saturday, 10:00 PM: Workshop 2
+2. Saturday, 10:00 AM: Workshop 2
     * Creating a backend with Flask
     * Connecting it all with Javascript
-3. Saturday, 11:15 PM: Workshop 3
+3. Saturday, 11:15 AM: Workshop 3
     * Using databases
     * Intro to APIs
 
