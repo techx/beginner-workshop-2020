@@ -105,6 +105,11 @@ If you are having trouble setting up, or have any questions about the workshop, 
 
 
 ## Resources
+
+#### From the workshop
+* Beginner Slides: https://go.hackmit.org/beginner-github
+* Code from the workshop are on branches **workshop1**, **workshop2**, **final** (commands to checkout branches are on the slides!)
+
 #### Git
 * Git basic commands overview: https://training.github.com/downloads/github-git-cheat-sheet/
 * Git detailed cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
@@ -117,8 +122,8 @@ If you are having trouble setting up, or have any questions about the workshop, 
 * CSS Cheat Sheet: https://websitesetup.org/wp-content/uploads/2019/11/wsu-css-cheat-sheet-gdocs.pdf
 * My favorite CSS tutorial on Flexboxes (makes life with CSS easier): https://flexboxfroggy.com/
 * Semantic Ui: https://semantic-ui.com/
-CSS import tag: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-* JS import tag: <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+CSS import tag: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">`
+* JS import tag: `<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>`
 * Bootstrap: https://getbootstrap.com/docs/4.5/getting-started/introduction/
 
 
@@ -131,7 +136,7 @@ CSS import tag: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semant
 * Jquery documentation: 
 * Javascript tutorial: https://javascript.info/
 * Javascript functions cheat sheet: https://htmlcheatsheet.com/js/
-  * Import link: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  * Import link: `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>`
 ** note: "CDN" stands for "Content Delivery Network", CDNs host a lot of libraries you can import anytime. When you need the link, just google "<library name> CDN" and you should be able to find a link
 
 
