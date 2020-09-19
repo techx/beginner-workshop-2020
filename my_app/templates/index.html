@@ -1,0 +1,36 @@
+<!-- index.html at the end of workshop 1 / start of workshop 2 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hack Book</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link rel="stylesheet" href="../static/main.css">
+  
+</head>
+<body>
+  <div id="container">
+    <h1>{{name}}</h1>
+    
+    <img src="https://i.ibb.co/q9jNDpF/119202528-356931955689583-5869759538756809981-n-2.jpg">
+
+    <p>Welcome to my hack book portfolio! I'm ready to do some cool shit</p>
+
+    {% for fact in facts %}
+      <p class="facts">{{fact}}: {{facts[fact]}}</p>
+    {% endfor %}
+    <div class="ui button">Post</div>
+    {% for post in posts %}
+    
+    <div id="post1"  class="post">
+      <div class="ui segment">
+        <h3>{{post["title"]}}</h3>
+        <p>{{post["description"]}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</body>
+</html>
