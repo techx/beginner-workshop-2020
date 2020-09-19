@@ -1,0 +1,38 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    background-color: lightblue;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.facts {
+    font-size: 1.25em;
+}
+
+#color {
+    color: blue;
+}
+
+button {
+    width: 100px;
+    height:  50px;
+}
+
+#container {
+    text-align: center;
+}
+
+
+.post {
+    margin-top: 75px !important;
+    width: 50%;
+    margin: auto;
+}
+
+
