@@ -5,7 +5,7 @@ from flask import render_template, request, redirect
 from my_app.models import Fact, Post
 
 name="Zoë"
-facts = {"Birthday":"April 10th, 2000", "Favorite Color": "blue", "Favorite Hackathon": "HackMIT"}
+facts = {"Birthday":"August 29th, 2001", "Favorite Color": "blue", "Favorite Hackathon": "HackMIT"}
 posts = [{"title": "This is my 1st post!", "description": "this is my first description!"}]
 
 @app.route("/")
@@ -28,14 +28,13 @@ def change_name():
 @app.route("/post", methods=["POST"])
 def post():
     if request.method == "POST":
+        print(request)
         post_info = request.get_json()
         new_post = Post(title=post_info['title'], description=post_info['description'])
         db.session.add(new_post)
         db.session.commit()
     return redirect("/")
 
-
-# this will be an exercise 
 @app.route("/change_facts", methods=["POST"])
 def change_facts():
     if request.method == "POST":

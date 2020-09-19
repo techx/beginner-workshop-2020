@@ -1,4 +1,4 @@
-<!-- index.html at the end of workshop 1 / start of workshop 2 -->
+<!-- index.html at the end of workshop 2 -->
 
 <!DOCTYPE html>
 <html>
@@ -6,31 +6,34 @@
   <title>Hack Book</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
   <link rel="stylesheet" href="../static/main.css">
-  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="../static/script.js"></script>
 </head>
 <body>
   <div id="container">
     <h1>{{name}}</h1>
     
-    <img src="https://i.ibb.co/q9jNDpF/119202528-356931955689583-5869759538756809981-n-2.jpg">
+    <img src="https://lh3.googleusercontent.com/VEYLsRsafd13aXnYgt0xP7cuNwXRmnvZAkPOYBD0ujgjZB0FFccJGNshOcNa5zqJiggauDZwB6VdZ_NTxG12rnYXrajTkHLe7sIy0oLVjRWIvftoHl1fPSVz4852YyRNM5EVt8f8ahmwpMYFzjsdBsck6YDkhYuQQxS74R5c49KQDp5bBpOm98X71PINKwLbXpZ-bjOQlDyC_U4EZxsxDk3hhyUsOE23f9zIfXo6TDQGUQivr5mYdv1hN4JOqYgGx5c8Jkjh7OGl6njA62QDcDhczx53_sjtgsCYhWD1yPwzoi1o85Ech_qZNJf0K_928eFDgGGbUYlXXjmwoR8sEBvZ6jb6BajjE8068EDzSKGfAyhuHKH_aXHJG8Ctp7OFpKm9QXc2Wo-K9ToTNFnLNEjsndB6gATT_ysNNuv4IzEeAsRbOldvSaoHCR1rgmDTUqvPPtCr7flCTn7Y0wB3Nlaw8IhujLkkvnSu5m87GdRoDfxlyrZC0HWYMpTIUjpmNPK_QSLGT8lw2gvGsOmrm_dPYEczzqyDessFPvU3ouSr_vS_6009zlAzPYkb5nP3kg_8vWuPqPn9yoo2CgLZBblbHde8k_nRjgJ6zb8_3ZJW-xIx86A-nOYl0RxF_wCoUdTLpn95TYB4O6DJHRdfw2RPrZIZUnYGeDclikuRglRDUSscOmb0CfR0LXitmjA=w942-h947-no?authuser=0">
 
-    <p>Welcome to my hack book portfolio! I'm ready to do some cool shit</p>
+    <p>Welcome to my hack book portfolio! I'm ready to do some cool stuff</p>
 
-    {% for fact in facts %}
-      <p class="facts">{{fact}}: {{facts[fact]}}</p>
+    {% for key, value in facts.items() %}
+      <p class="facts">{{key}}: {{value}}</p>
     {% endfor %}
-    <div class="ui button">Post</div>
+
+    <input type="text" id="title"><br>
+    <input type="text" id="description"><br>
+    <div class="ui button" id="post-button">Post</div>
     {% for post in posts %}
-    
-    <div id="post1"  class="post">
-      <div class="ui segment">
-        <h3>{{post["title"]}}</h3>
-        <p>{{post["description"]}}</p>
+      <div class="post">
+        <div class="ui segment">
+          <h3>{{post['title']}}</h3>
+          <p>{{post['description']}}</p>
+        </div>
       </div>
-    </div>
     {% endfor %}
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
 </body>
 </html>
