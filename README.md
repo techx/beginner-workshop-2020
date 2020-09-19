@@ -83,7 +83,7 @@ Example output: `pip 19.2.3 from /home/<path to python>/python3.8/site-packages/
 
 
 #### 7. Install Requirements File
-In your terminal, navigate to the root directory of this repository. 
+In your terminal, navigate to the root directory of this repository, `cd beginner-workshop-2020`
 
 Run `pip install -r requirements.txt` in the command line to install all of the requirements contained in this file.
 
