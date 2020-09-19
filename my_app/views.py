@@ -1,15 +1,22 @@
 # Views at the end of Workshop 2
 
-from my_app import app
+from my_app import app, db
 from flask import render_template, request, redirect
+from my_app.models import Fact, Post
 
-name="Justin Yu"
+name="Zoë"
 facts = {"Birthday":"April 10th, 2000", "Favorite Color": "blue", "Favorite Hackathon": "HackMIT"}
 posts = [{"title": "This is my 1st post!", "description": "this is my first description!"}]
 
 @app.route("/")
 def index():
-    return render_template("index.html", name=name, facts=facts, posts=posts)
+    db_facts = Fact.query.all()
+    fact_dict = {fact.name: fact.value for fact in db_facts}
+
+    db_posts = Post.query.all()
+    post_list = [{"title": post.title, "description": post.description} for post in db_posts]
+
+    return render_template("index.html", name=name, facts=fact_dict, posts=post_list)
 
 @app.route("/change_name")
 def change_name():
@@ -20,21 +27,22 @@ def change_name():
 
 @app.route("/post", methods=["POST"])
 def post():
-    global posts
     if request.method == "POST":
         post_info = request.get_json()
-        posts.append({"title": post_info["title"], "description": post_info["description"]})
+        new_post = Post(title=post_info['title'], description=post_info['description'])
+        db.session.add(new_post)
+        db.session.commit()
     return redirect("/")
 
 
 # this will be an exercise 
 @app.route("/change_facts", methods=["POST"])
 def change_facts():
-    global facts
     if request.method == "POST":
         change_facts = request.get_json()
         for key, value in change_facts.items():
-            if key not in facts:
-                facts[key] = value
-            facts[key] = value
+            if Fact.query.filter(Fact.name == key).first() is None:
+                new_fact = Fact(name=key, value=value)
+                db.session.add(new_fact)
+        db.session.commit()
     return redirect("/")
