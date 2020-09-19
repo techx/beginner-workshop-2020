@@ -7,7 +7,9 @@ app = Flask(__name__)
 #load main config
 app.config.from_pyfile('../config.py') 
 db = SQLAlchemy(app)
-db.create_all()
+
 
 import my_app.views
 import my_app.models
+
+db.create_all()

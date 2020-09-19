@@ -1,2 +1,3 @@
 venv/
 my_app/__pycache__
+app.db

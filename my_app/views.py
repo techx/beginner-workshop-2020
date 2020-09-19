@@ -6,11 +6,27 @@ from my_app.models import Fact, Post
 
 name="My Name"
 facts = {"Birthday":"September 18th, 2020", "Favorite Color": "blue", "Favorite Hackathon": "HackMIT"}
-posts = [{"title": "This is my 1st post!", "description": "this is my first description!"}]
+posts = []
 
 @app.route("/")
 def index():
+    """
+    [GET]: 
+        - args: none
+        - return: index.html
+    """
+
     db_facts = Fact.query.all()
+
+    # if nothing in the db, populate it
+    if len(db_facts) == 0: 
+        global facts 
+        for fact in facts:
+            new_fact = Fact(name=fact, value=facts[fact])
+            db.session.add(new_fact)
+        db.session.commit()
+        db_facts = Fact.query.all()
+
     fact_dict = {fact.name: fact.value for fact in db_facts}
 
     db_posts = Post.query.all()
@@ -20,6 +36,11 @@ def index():
 
 @app.route("/change_name")
 def change_name():
+    """
+    [GET]: 
+        - args: name=<str>
+        - return: index.html
+    """
     global name
     new_name = request.args.get('name')
     name = new_name
@@ -27,6 +48,13 @@ def change_name():
 
 @app.route("/post", methods=["POST"])
 def post():
+    """
+    [POST]: 
+        - args: none
+        - body: 
+            {"title": <str>, "description":<str> }
+        - return: index.html
+    """
     if request.method == "POST":
         print(request)
         post_info = request.get_json()
@@ -37,6 +65,13 @@ def post():
 
 @app.route("/change_facts", methods=["POST"])
 def change_facts():
+    """
+    [POST]: 
+        - args: none
+        - body: 
+            {"fact_name": <str>, "fact_name2":<str> ... }
+        - return: index.html
+    """
     if request.method == "POST":
         change_facts = request.get_json()
         for key, value in change_facts.items():
