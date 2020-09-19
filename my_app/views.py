@@ -4,8 +4,8 @@ from my_app import app, db
 from flask import render_template, request, redirect
 from my_app.models import Fact, Post
 
-name="Zoë"
-facts = {"Birthday":"August 29th, 2001", "Favorite Color": "blue", "Favorite Hackathon": "HackMIT"}
+name="My Name"
+facts = {"Birthday":"September 18th, 2020", "Favorite Color": "blue", "Favorite Hackathon": "HackMIT"}
 posts = [{"title": "This is my 1st post!", "description": "this is my first description!"}]
 
 @app.route("/")
